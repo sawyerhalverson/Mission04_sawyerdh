@@ -1,0 +1,9 @@
+﻿body {
+    font-size:medium;
+    background-color:ivory;
+}
+
+label {
+    display:inline-block;
+    width:100px;
+}
