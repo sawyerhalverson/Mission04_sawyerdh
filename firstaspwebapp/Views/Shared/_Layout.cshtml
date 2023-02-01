@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <!-- This is the html page for my website about myself.-->
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <!-- Icon loaded in-->
+    <link rel="icon" href="img/GPTempDownload-2-670x388.jpg" />
+    <!-- Loading in CSS -->
+    <link href="~/lib/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/default.css" rel="stylesheet" />
+</head>
+
+
+<body>
+    <!-- Nav bar -->
+    <nav>
+        <a asp-controller="Home" asp-action="Index">Homepage</a>
+        <a asp-controller="Home" asp-action="GradeCalculator">Grade Calculator</a>
+    </nav>
+    <div>
+        @RenderBody()
+    </div>
+
+    <!--Load in javaScript and jQuery-->
+    <script src="~/lib/bootstrap/bootstrap.min.js"></script>
+    <script src="~/lib/jquery/jquery-3.6.3.min.js"></script>
+    <script src="~/js/forms.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+﻿
+@model firstaspwebapp.Models.GradeCalculatorModel
+@{
+}
+
+
+
+<!--Javascript Grade Calculator-->
+<h2>Grade Calculator</h2>
+<form id="GradeCalc" method="post">
+    <label>Assignments:</label>
+    <input id="txtAssignments" asp-for="Assignments" /><br />
+    <label>Group Project:</label>
+    <input id="txtGroup" asp-for="GroupProject"/><br />
+    <label>Quizzes:</label>
+    <input id="txtQuizzes" asp-for="Quizzes" /><br />
+    <label>Midterm:</label>
+    <input id="txtMidterm" asp-for="Midterm" /><br />
+    <label>Final:</label>
+    <input id="txtFinal" asp-for="Final" /><br />
+    <label>Intex:</label>
+    <input id="txtIntex" asp-for="Intex"/><br />
+    <button id="btnSend" type="submit">Submit</button>
+
+     <div asp-validation-summary="All"></div>  
+
+</form>

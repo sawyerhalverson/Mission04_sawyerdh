@@ -1,5 +1,6 @@
 ﻿// this is my grade calculator which takes in the different grades, calculates the final grade based on weight, and then assigns the correct letter grade
 $("#btnSend").click(function () {
+
     var assignments = $("#txtAssignments").val();
     var group = $("#txtGroup").val();
     var quizzes = $("#txtQuizzes").val();
@@ -7,6 +8,7 @@ $("#btnSend").click(function () {
     var final = $("#txtFinal").val();
     var intex = $("#txtIntex").val();
 
+    // create totalGrade variable based on weights
     var totalGrade = (assignments * 0.5) +
         (group * 0.1) +
         (quizzes * 0.1) +
@@ -14,6 +16,8 @@ $("#btnSend").click(function () {
         (final * 0.1) +
         (intex * 0.1);
 
+
+    // letterGrade variable initialized
     var letterGrade;
     if (totalGrade >= 94) {
         letterGrade = "A";
@@ -40,6 +44,8 @@ $("#btnSend").click(function () {
     }
 
 
-    var html = "<p>Final Grade: " + letterGrade;
-    $("#GradeCalc").append(html);
+    //alert to display grade
+    var html = "Final Grade: " + letterGrade;
+    alert(html);
+ 
 })

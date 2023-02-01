@@ -1,0 +1,35 @@
+﻿using firstaspwebapp.Models;
+using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace firstaspwebapp.Controllers
+{
+    public class HomeController : Controller
+    {
+        public IActionResult Index()
+        {
+            return View();
+        }
+
+
+        // Get Method 
+
+        [HttpGet]
+        public IActionResult GradeCalculator()
+        {
+            return View();
+        }
+
+
+        //Post Method
+
+        [HttpPost]
+        public IActionResult GradeCalculator(GradeCalculatorModel model)
+        {
+            return View();
+        }
+    }
+}
